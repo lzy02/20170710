@@ -4,13 +4,13 @@
 <meta cahrset="UTF-8">
 <meta name="viewport" content="device-width,initial-scale=1.0">
 <title>计算器</title>
-   <scrtipt type="text/jscript">
+   <script type="text/jscript">
        function value(){
         var str1 = document.getElementById("text1").value;
         var str2 = document.getElementById("text2").value;
         var sel  = document.getElementById("select").value;
         var val="";
-      swcith(sel){
+      swicth(sel){
          case "+": 
             val=parseFloat(str1) + parseFloat(str2);
             break;
@@ -31,12 +31,12 @@
     <input type="text"  id="text1">
     <select id="select">
       <option value="+">+</option> 
-      <option value="-" value="+" value="+">-</option> 
-      <option value="*" value="+">*</option> 
+      <option value="-">-</option> 
+      <option value="*">*</option> 
       <option value="/">/</option> 
     </select>
     <input type="text" id="text2">
-    <input type="button" id="btn" value="=" onclick="vlaue()">
+    <input type="button" value="=" onclick="vlaue()">
     <input type="text" id="text3">
   </body>
 </html>
