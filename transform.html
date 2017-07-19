@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		*{margin: 0;padding: 0;}
+		div{
+			margin: 100px;
+		}
+		#main{
+		  width: 280px;
+            height:500px;
+            /*border:1px solid red;*/
+            margin:50px auto;
+            transform-style:preserve-3d;
+            perspective:400px;
+		}
+		#main ul li{
+		width: 200px;
+            height: 40px;
+            list-style: none;
+            background: #f96;
+            /* 让每个li上下左右都有1像素的间距 */
+            margin: 1px;
+            /* 文字居中显示 */
+            text-align: center;
+            /* 行高 */
+            line-height: 40px;
+            /* 字体样式 */
+            font-family: "微软雅黑";
+            /* 字体大小 */
+            font-size: 16px;
+            /* 将鼠标设置为小手状态 */
+            cursor: pointer;
+            /* 规定完成过渡效果需要花费的时间 */
+            transition: 0.5s;
+		}
+		
+		   /*上浮*/
+           /*
+            #main ul li:hover{
+            transform: translateZ(30px) scale(1.1);
+        }*/
+           /*前后翻转*/
+		    /*#main ul li:hover{
+            transform: translateZ(30px) scale(1.1) rotateX(360deg);
+           }*/
+    
+          /*左右翻滚*/
+            #main ul li:hover{
+            transform: translateZ(30px) scale(1.1) rotateY(360deg);
+        }
+
+
+	</style>
+	<body>
+		<div id="main">
+			<ul>
+				<li>第一层</li>
+				<li>第二层</li>
+				<li>第三层</li>
+			</ul>
+		</div>
+	</body>
+</html>
