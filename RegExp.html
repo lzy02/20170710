@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>正则表达式RegExp</title>
+		<script>
+			//1.new  RegExp（string，pattern）
+			//var reg=new RegExp（）；
+		
+		    //2.字面量方式
+			//var reg=/hello/
+				
+			
+			var reg=/hello/i;  //i  不分大小写   g：全局匹配  m：多行匹配
+            var test="Hello";
+            document.write(reg.test(test)+"<br>");//true   布尔类型  匹配对返回TRUE
+            document.write(reg.exec(test));//Hello     返回的是数组对象  不匹配返回null
+		    
+		    
+//		      String的四种正则表达式方法
+//      1.math(pattern)  返回pattern中的字符串 null 返回数组 数组中含有匹配的字符串
+//      默认返回第一个匹配的字符串(加入全局匹配g即可全部显示)
+//      2.search(pattern)返回字符串中的pattern的第一个位置
+//      3.replace(pattern,replacement)用后者替换前者
+//      加入g替换所有符合正则表达式的字符串
+//      4.split(pattern) 切割数组
+//		    
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
